@@ -29,9 +29,9 @@
 		1CBA9A001FBE89AC00252945 /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA99FE1FBE89AC00252945 /* AlbumTableViewCell.m */; };
 		1CBA9A011FBE89AC00252945 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CBA99FF1FBE89AC00252945 /* AlbumTableViewCell.xib */; };
 		1CBA9A0B1FBEBB8400252945 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA9A0A1FBEBB8400252945 /* PhotosViewController.m */; };
-		1CEEFCC21FE39953005BFB8C /* share_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CEEFCC11FE39953005BFB8C /* share_button.png */; };
 		1CEEFCC41FE3997C005BFB8C /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CEEFCC31FE3997C005BFB8C /* setting_button.png */; };
 		1CEEFCC61FE39B9E005BFB8C /* memo_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CEEFCC51FE39B9E005BFB8C /* memo_mark.png */; };
+		52647F3F1FE4FA830052D54D /* share_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 52647F3E1FE4FA830052D54D /* share_button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,9 +69,9 @@
 		1CBA99FF1FBE89AC00252945 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
 		1CBA9A091FBEBB8400252945 /* PhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
 		1CBA9A0A1FBEBB8400252945 /* PhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
-		1CEEFCC11FE39953005BFB8C /* share_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_button.png; path = ../../../../../Downloads/share_button.png; sourceTree = "<group>"; };
 		1CEEFCC31FE3997C005BFB8C /* setting_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_button.png; sourceTree = "<group>"; };
 		1CEEFCC51FE39B9E005BFB8C /* memo_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memo_mark.png; sourceTree = "<group>"; };
+		52647F3E1FE4FA830052D54D /* share_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 		1C4CBF0B1FC7F3480048315F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				52647F3E1FE4FA830052D54D /* share_button.png */,
 				1CEEFCC51FE39B9E005BFB8C /* memo_mark.png */,
 				1CEEFCC31FE3997C005BFB8C /* setting_button.png */,
-				1CEEFCC11FE39953005BFB8C /* share_button.png */,
 				1C4CBF0C1FC7FBD80048315F /* select_mark.png */,
 				1C542DA11FCB945A00E01EBE /* navibar_back.png */,
 				1CA8FAC71FCD223F003A71ED /* navibar_close.png */,
@@ -257,7 +257,7 @@
 				1C97B52A1FBE5FAC0050271F /* Main.storyboard in Resources */,
 				1C542DA21FCB945A00E01EBE /* navibar_back.png in Resources */,
 				1C4CBF0A1FC7F0650048315F /* splash.png in Resources */,
-				1CEEFCC21FE39953005BFB8C /* share_button.png in Resources */,
+				52647F3F1FE4FA830052D54D /* share_button.png in Resources */,
 				1CBA9A011FBE89AC00252945 /* AlbumTableViewCell.xib in Resources */,
 				1C4CBF0D1FC7FBD80048315F /* select_mark.png in Resources */,
 				1CA8FACA1FCD578D003A71ED /* player_play.png in Resources */,
@@ -420,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LR348WFMT6;
+				DEVELOPMENT_TEAM = KUJVKTG5P2;
 				INFOPLIST_FILE = ImageMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -440,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LR348WFMT6;
+				DEVELOPMENT_TEAM = KUJVKTG5P2;
 				INFOPLIST_FILE = ImageMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

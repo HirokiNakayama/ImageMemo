@@ -36,8 +36,8 @@ const NSUInteger MAX_HEADER_IMAGE_COUNT = 5;
     _collectionView.dataSource = self;
 
     // 選択中の画像囲みボーダー設定
-    _selectImageBorder.layer.borderColor = [UIColor redColor].CGColor;
-    _selectImageBorder.layer.borderWidth = 1.0;
+    _selectImageBorder.layer.borderColor = [UIColor greenColor].CGColor;
+    _selectImageBorder.layer.borderWidth = 2.0;
     
     _imputCompButton.hidden = YES;
     _shareButton.hidden = NO;

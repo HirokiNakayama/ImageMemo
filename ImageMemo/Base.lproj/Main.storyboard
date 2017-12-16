@@ -384,7 +384,7 @@
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehL-CI-KEa" userLabel="TextViewBack">
                                 <rect key="frame" x="10" y="389" width="355" height="268"/>
-                                <color key="backgroundColor" red="0.9724132419" green="0.97000139949999997" blue="0.90061908960000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.91186694310250149" green="0.97680455446243286" blue="0.91943123558150608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -467,6 +467,6 @@
         <image name="player_play.png" width="128" height="128"/>
         <image name="select_mark.png" width="256" height="256"/>
         <image name="setting_button.png" width="128" height="128"/>
-        <image name="share_button.png" width="128" height="128"/>
+        <image name="share_button.png" width="64" height="64"/>
     </resources>
 </document>
