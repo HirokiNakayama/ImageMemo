@@ -82,7 +82,9 @@
                                               contentMode:PHImageContentModeAspectFill
                                                   options:nil
                                             resultHandler:^(UIImage *result, NSDictionary *info) {
-                                                cell.thumbnailView.image = result;
+                                                if (result != nil) {
+                                                    cell.thumbnailView.image = result;
+                                                }
                                             }];
     // 選択された背景色を白に設定
     UIView *cellSelectedBgView = [[UIView alloc] init];
