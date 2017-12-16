@@ -119,10 +119,12 @@
         
         // 選択位置の画像表示
         PHAsset *asset = [assets objectAtIndex:select];
-        [[PHImageManager defaultManager] requestImageForAsset:asset
-                                                   targetSize:CGSizeMake(_photoImage.frame.size.width, _photoImage.frame.size.height)
+        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+        options.networkAccessAllowed = YES;
+        [[PHImageManager defaultManager] requestImageForAsset:[assets objectAtIndex:select]
+                                                   targetSize:PHImageManagerMaximumSize
                                                   contentMode:PHImageContentModeAspectFit
-                                                      options:nil
+                                                      options:options
                                                 resultHandler:^(UIImage *result, NSDictionary *info) {
                                                     if (result != nil) {
                                                         _photoImage.image = result;

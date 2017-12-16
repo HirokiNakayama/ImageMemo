@@ -217,13 +217,14 @@ const NSUInteger MAX_HEADER_IMAGE_COUNT = 5;
     if (assets.count > index) {
         PHAsset *asset = [assets objectAtIndex:index];
         // 表示画像取得
-        [[PHImageRequestOptions alloc] init].synchronous = YES;
         [[PHImageManager defaultManager] requestImageForAsset:asset
                                                    targetSize:CGSizeMake(cell.frame.size.width, cell.frame.size.height)
-                                                  contentMode:PHImageContentModeAspectFill
+                                                  contentMode:PHImageContentModeAspectFit
                                                       options:nil
                                                 resultHandler:^(UIImage *result, NSDictionary *info) {
-                                                    imageView.image = result;
+                                                    if (result != nil) {
+                                                        imageView.image = result;
+                                                    }
                                                 }];
         
         // メモ済みマーク設定
