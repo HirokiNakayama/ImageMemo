@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PhotosViewController.h
 //  ImageMemo
 //
 //  Created by HirokiNakayama on 2017/11/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PhotosViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
-
