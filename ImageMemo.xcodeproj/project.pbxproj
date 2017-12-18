@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C019D921FC405BB0081A909 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C019D911FC405BB0081A909 /* CoreDataManager.m */; };
 		1C019D951FC405C80081A909 /* PhotoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C019D941FC405C80081A909 /* PhotoEntity.m */; };
+		1C1F397A1FE748FD009E96FA /* feature.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C1F39791FE748FD009E96FA /* feature.txt */; };
 		1C4CBF0A1FC7F0650048315F /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4CBF091FC7F0650048315F /* splash.png */; };
 		1C4CBF0D1FC7FBD80048315F /* select_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4CBF0C1FC7FBD80048315F /* select_mark.png */; };
 		1C542DA21FCB945A00E01EBE /* navibar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C542DA11FCB945A00E01EBE /* navibar_back.png */; };
@@ -40,6 +41,7 @@
 		1C019D931FC405C40081A909 /* PhotoEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEntity.h; sourceTree = "<group>"; };
 		1C019D941FC405C80081A909 /* PhotoEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEntity.m; sourceTree = "<group>"; };
 		1C019D961FC405CA0081A909 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1C1F39791FE748FD009E96FA /* feature.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feature.txt; sourceTree = SOURCE_ROOT; };
 		1C4CBF091FC7F0650048315F /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		1C4CBF0C1FC7FBD80048315F /* select_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_mark.png; sourceTree = "<group>"; };
 		1C542DA11FCB945A00E01EBE /* navibar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navibar_back.png; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		1C97B5211FBE5FAC0050271F /* ImageMemo */ = {
 			isa = PBXGroup;
 			children = (
+				1C1F39791FE748FD009E96FA /* feature.txt */,
 				1C2301241FCE8F08006322E9 /* Data */,
 				1C2301231FCE8EE0006322E9 /* ViewController */,
 				1C4CBF0B1FC7F3480048315F /* Resource */,
@@ -261,6 +264,7 @@
 				1CBA9A011FBE89AC00252945 /* AlbumTableViewCell.xib in Resources */,
 				1C4CBF0D1FC7FBD80048315F /* select_mark.png in Resources */,
 				1CA8FACA1FCD578D003A71ED /* player_play.png in Resources */,
+				1C1F397A1FE748FD009E96FA /* feature.txt in Resources */,
 				1CA8FAC81FCD2240003A71ED /* navibar_close.png in Resources */,
 				1CEEFCC61FE39B9E005BFB8C /* memo_mark.png in Resources */,
 			);
@@ -420,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KUJVKTG5P2;
+				DEVELOPMENT_TEAM = LR348WFMT6;
 				INFOPLIST_FILE = ImageMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -440,7 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KUJVKTG5P2;
+				DEVELOPMENT_TEAM = LR348WFMT6;
 				INFOPLIST_FILE = ImageMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

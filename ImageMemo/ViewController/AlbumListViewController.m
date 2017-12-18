@@ -34,10 +34,14 @@
     
     _albumList = [[NSMutableArray alloc] init];
     
+    PHFetchOptions *fetchOptions = [PHFetchOptions new];
+    fetchOptions.sortDescriptors = @[
+                                     [NSSortDescriptor sortDescriptorWithKey:@"startDate" ascending:YES],
+                                     ];
     // システム管理 アルバム情報取得
     PHFetchResult *assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum
                                                                                subtype:PHAssetCollectionSubtypeAny
-                                                                               options:nil];
+                                                                               options:fetchOptions];
     for (PHAssetCollection *assetCollection in assetCollections) {
         if ([PhotoCollection isAllPhotos:assetCollection]) {
             [_albumList addObject:assetCollection];
@@ -47,7 +51,7 @@
     // ユーザ管理 アルバム情報取得
     assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum
                                                                                subtype:PHAssetCollectionSubtypeAny
-                                                                               options:nil];
+                                                                               options:fetchOptions];
     for (PHAssetCollection *assetCollection in assetCollections) {
         PHFetchResult *assets = [PHAsset fetchAssetsInAssetCollection:assetCollection options:nil];
         if (assets.count > 0) {
