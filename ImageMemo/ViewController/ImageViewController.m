@@ -122,7 +122,7 @@
         PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
         options.networkAccessAllowed = YES;
         [[PHImageManager defaultManager] requestImageForAsset:[assets objectAtIndex:select]
-                                                   targetSize:PHImageManagerMaximumSize
+                                                   targetSize:CGSizeMake(_photoImage.frame.size.width, _photoImage.frame.size.height)
                                                   contentMode:PHImageContentModeAspectFit
                                                       options:options
                                                 resultHandler:^(UIImage *result, NSDictionary *info) {

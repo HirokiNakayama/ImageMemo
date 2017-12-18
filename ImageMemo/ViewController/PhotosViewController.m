@@ -227,9 +227,7 @@ typedef NS_ENUM (NSInteger, MenuSelect) {
                         } completionHandler:^(BOOL success, NSError *error) {
                             if (success) {
                                 // main thread で実行
-                                dispatch_async(
-                                               dispatch_get_main_queue(),
-                                               ^{
+                                dispatch_async(dispatch_get_main_queue(), ^{
                                                    [_collectionView reloadData];
                                                });
                             }
