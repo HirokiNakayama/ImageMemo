@@ -93,6 +93,17 @@
                                     <action selector="exitTouchUpInside:" destination="JSV-HD-8AY" eventType="touchUpInside" id="Vz1-sd-sgr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfn-ho-Pv2" userLabel="shareButton">
+                                <rect key="frame" x="332" y="37" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="eLO-oR-npD"/>
+                                    <constraint firstAttribute="width" constant="28" id="jkQ-XF-yhm"/>
+                                </constraints>
+                                <state key="normal" image="share_button.png"/>
+                                <connections>
+                                    <action selector="shareTouchUpInside:" destination="JSV-HD-8AY" eventType="touchUpInside" id="Frm-5r-gZb"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKu-M1-DIp" userLabel="settingButton">
                                 <rect key="frame" x="332" y="37" width="28" height="28"/>
                                 <constraints>
@@ -168,9 +179,11 @@
                             <constraint firstItem="nS2-aQ-Fhj" firstAttribute="top" secondItem="aVP-Te-u2f" secondAttribute="bottom" constant="25" id="B1J-bn-qcZ"/>
                             <constraint firstItem="yzk-8e-a3D" firstAttribute="trailing" secondItem="KKu-M1-DIp" secondAttribute="trailing" constant="15" id="BMc-HY-Fht"/>
                             <constraint firstItem="aVP-Te-u2f" firstAttribute="trailing" secondItem="yzk-8e-a3D" secondAttribute="trailing" id="Ldu-Z0-gcP"/>
+                            <constraint firstItem="yzk-8e-a3D" firstAttribute="trailing" secondItem="jfn-ho-Pv2" secondAttribute="trailing" constant="15" id="PyP-0P-ywe"/>
                             <constraint firstItem="eCS-BY-jeF" firstAttribute="leading" secondItem="aVP-Te-u2f" secondAttribute="leading" constant="10" id="RKl-Kq-s6w"/>
                             <constraint firstItem="eCS-BY-jeF" firstAttribute="centerY" secondItem="aVP-Te-u2f" secondAttribute="centerY" id="T3x-zC-IHp"/>
                             <constraint firstItem="KKu-M1-DIp" firstAttribute="centerY" secondItem="aVP-Te-u2f" secondAttribute="centerY" id="W80-j5-9c2"/>
+                            <constraint firstItem="jfn-ho-Pv2" firstAttribute="centerY" secondItem="aVP-Te-u2f" secondAttribute="centerY" id="XUl-tv-Qec"/>
                             <constraint firstItem="aVP-Te-u2f" firstAttribute="top" secondItem="yzk-8e-a3D" secondAttribute="top" constant="10" id="nn1-QQ-9N4"/>
                             <constraint firstItem="yzk-8e-a3D" firstAttribute="bottom" secondItem="nS2-aQ-Fhj" secondAttribute="bottom" constant="20" id="rxD-gt-EdT"/>
                         </constraints>
@@ -178,6 +191,8 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="nS2-aQ-Fhj" id="tt5-L6-wuF"/>
+                        <outlet property="settingButton" destination="KKu-M1-DIp" id="hLE-ej-N21"/>
+                        <outlet property="shareButton" destination="jfn-ho-Pv2" id="7O2-hU-mh4"/>
                         <outlet property="titleLabel" destination="aVP-Te-u2f" id="Ts2-4k-DNp"/>
                         <segue destination="3US-YO-ZYr" kind="show" identifier="toMemoSelectViewController" id="xAK-4A-KG8"/>
                     </connections>
